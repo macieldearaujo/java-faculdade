@@ -1,11 +1,19 @@
 package application;
 
-public class aula1 {
+import java.util.Scanner;
+
+public class Aula1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(factorial(5));
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite um número para ser fatoriado: ");
+		int num = sc.nextInt();
+		
+		System.out.println(factorial(num));
+		sc.close();
 	}
 	
 	public static int factorial(Integer num) {
