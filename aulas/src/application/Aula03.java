@@ -25,7 +25,11 @@ public class Aula03 {
 		}
 		
 		for(int i = 0; i<values.length; i++) {
-			System.out.print(values[i] + ", ");
+			if(i != values.length-1) {
+				System.out.print(values[i] + ", ");
+			} else {
+				System.out.print(values[i]);
+			}
 		}
 		
 	}
